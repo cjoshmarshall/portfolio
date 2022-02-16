@@ -3,7 +3,7 @@ import React from 'react';
 function Extras() {
   return (
         <>
-        <div className='flex justify-center text-4xl pt-[85px] xl:pt-[105px] xl:text-6xl'>
+        <div className='flex justify-center text-4xl pt-[85px] xl:pt-[105px] 2xl:text-6xl'>
           Extras
         </div>
         <div className='grid place-content-center h-[300px] text-xl'>

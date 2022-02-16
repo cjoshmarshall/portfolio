@@ -8,14 +8,14 @@ import LinkIcon from '@mui/icons-material/Link';
 function Projects() {
   return (
         <>
-            <div className='flex justify-center text-4xl pt-[85px] xl:mb-24 xl:pt-[100px] xl:text-6xl'>
+            <div className='flex justify-center text-4xl pt-[85px] 2xl:mb-24 2xl:pt-[100px] 2xl:text-6xl'>
                 Projects
             </div>
             <div className=''>
                 <div className='mx-10 my-16  box-border border-2 reveal'>
                     <div className='flex flex-col lg:grid lg:grid-cols-2'>
                         <div className='scale-75 transition ease-out hover:scale-90'>
-                            <a href='https://www.google.com' target='_blank'>
+                            <a href='https://www.google.com' target='_blank' rel="noreferrer">
                                 <div className='h-full'>
                                     <img className='absolute w-full animate-fade1' src={vm_img1} alt=' ' />
                                     <img className='absolute w-full animate-fade2' src={vm_img2} alt=' ' />
@@ -31,20 +31,20 @@ function Projects() {
                                 </div>
                             </a>
                         </div>
-                        <div className='w-11/12 py-8'>
+                        <div className='p-8 lg:px-0 lg:w-11/12'>
                             <p className='text-2xl'>Vintage Motors Rentals - Personal Project</p>
-                            <ul className='flex justify-center my-3 xl:text-xl'>
+                            <ul className='flex justify-center my-3 text-xl'>
                                 <li className='mx-6'>ReactJS</li>
                                 <li className='mx-6'>NodeJS</li>
                                 <li className='mx-6'>MongoDB</li>
                                 <li className='mx-6'>AWS</li>
                             </ul>
-                            <div className='xl:my-12 xl:text-xl'>
+                            <div className='2xl:my-12 2xl:text-xl'>
                                 <p className='my-2'>Description:</p>
                                 <p>A completely responsive e-commerce site for renting Bikes implemented using the MERN stack.</p>
                             </div>
                             
-                        <div className='flex justify-end mx-4'>
+                        <div className='flex justify-end mx-4 mt-6'>
                             <a href='https://www.github.com' target='_blank'>
                                 <LinkIcon className='hover:transition ease-out hover:scale-150 mx-2'/>
                                 <GitHubIcon className='hover:transition ease-out hover:scale-150 mx-2'/>
@@ -53,10 +53,11 @@ function Projects() {
                         </div>
                     </div>                    
                 </div>
-                <div className='mx-10 my-10 box-border border-2 reveal'>
+
+                <div className='mx-10 my-16  box-border border-2 reveal'>
                     <div className='flex flex-col lg:grid lg:grid-cols-2'>
-                        <div className='scale-75 transition ease-out hover:scale-90 animation fade fadeOut'>
-                            <a href='https://www.google.com' target='_blank'>
+                        <div className='scale-75 transition ease-out hover:scale-90'>
+                            <a href='https://www.google.com' target='_blank' rel="noreferrer">
                                 <div className='h-full'>
                                     <img className='absolute w-full animate-fade1' src={vm_img1} alt=' ' />
                                     <img className='absolute w-full animate-fade2' src={vm_img2} alt=' ' />
@@ -72,20 +73,20 @@ function Projects() {
                                 </div>
                             </a>
                         </div>
-                        <div className='w-11/12 py-8'>
+                        <div className='p-8 lg:px-0 lg:w-11/12'>
                             <p className='text-2xl'>Messenger App - Personal Project</p>
-                            <ul className='flex justify-center my-3 xl:text-xl'>
+                            <ul className='flex justify-center my-3 text-xl'>
                                 <li className='mx-6'>ReactJS</li>
                                 <li className='mx-6'>NodeJS</li>
                                 <li className='mx-6'>MongoDB</li>
                                 <li className='mx-6'>socket.io</li>
                             </ul>
-                            <div className='xl:my-12 xl:text-xl'>
+                            <div className='2xl:my-12 2xl:text-xl'>
                                 <p className='my-2'>Description:</p>
                                 <p>A completely responsive common messenger application created using the MERN stack with socket.io</p>
                             </div>
                             
-                        <div className='flex justify-end mx-4 mt-8'>
+                        <div className='flex justify-end mx-4 mt-6'>
                             <a href='https://www.github.com' target='_blank'>
                                 <LinkIcon className='hover:transition ease-out hover:scale-150 mx-2'/>
                                 <GitHubIcon className='hover:transition ease-out hover:scale-150 mx-2'/>

@@ -18,15 +18,6 @@ html {
     opacity: 1;
 }
 
-.load{
-    transform: translateY(-25px);
-    opacity: 0;
-    transition: all 1s ease;
-}
-.load.active{
-    transform: translateY(0px);
-    opacity: 1;
-}
 
 
 
