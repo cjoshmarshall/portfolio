@@ -2,6 +2,8 @@ import React from 'react';
 import vm_img1 from './vm_img1.png'
 import vm_img2 from './vm_img2.png'
 import vm_img3 from './vm_img3.png'
+import sg_img1 from './sg_img1.jpg'
+import sg_img2 from './sg_img2.jpg'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkIcon from '@mui/icons-material/Link';
 
@@ -89,6 +91,46 @@ function Projects() {
                         <div className='flex justify-end mx-4 mt-6'>
                             <a href='https://www.github.com' target='_blank'>
                                 <LinkIcon className='hover:transition ease-out hover:scale-150 mx-2'/>
+                                <GitHubIcon className='hover:transition ease-out hover:scale-150 mx-2'/>
+                            </a>
+                        </div>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div className='mx-10 my-16  box-border border-2 reveal'>
+                    <div className='flex flex-col lg:grid lg:grid-cols-2'>
+                        <div className='scale-75 transition ease-out hover:scale-90'>
+                            <a href='https://joshssnakegame.netlify.app' target='_blank' rel="noreferrer">
+                                <div className='h-full'>
+                                    <img className='absolute w-full animate-fade4' src={sg_img1} alt=' ' />
+                                    <img className='w-full animate-fade5' src={sg_img2} alt=' ' />
+                                </div>
+                                <div className='absolute top-0 left-0 w-full h-full  bg-black opacity-0 hover:opacity-100 hover:bg-opacity-50 transition'>
+                                    <div className='grid place-content-center h-full text-4xl text-white bg-opacity-100'>
+                                        <div className='flex'>
+                                            <p>go to site</p>
+                                            <div><LinkIcon className='scale-150 mx-4'/></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div className='p-8 lg:px-0 lg:w-11/12'>
+                            <p className='text-2xl'>Snake Game - Personal Project</p>
+                            <ul className='flex justify-center my-3 text-xl'>
+                                <li className='mx-6'>ReactJS</li>
+                            </ul>
+                            <div className='2xl:my-12 2xl:text-xl'>
+                                <p className='my-2'>Description:</p>
+                                <p>A responsive game made with nothing else but ReactJS and pure Javascript. Press the UP,DOWN,LEFT,RIGHT keys to control the snake and swallow all the mice to score points.</p>
+                            </div>
+                            
+                        <div className='flex justify-end mx-4 mt-6'>
+                            <a href='https://joshssnakegame.netlify.app' target='_blank'>
+                                <LinkIcon className='hover:transition ease-out hover:scale-150 mx-2'/>
+                            </a>
+                            <a href='https://github.com/cjoshmarshall/snakegame' target='_blank'>
                                 <GitHubIcon className='hover:transition ease-out hover:scale-150 mx-2'/>
                             </a>
                         </div>

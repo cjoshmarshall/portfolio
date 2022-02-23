@@ -15,6 +15,8 @@ module.exports = {
         fade1: 'fadeImage1 18s infinite',
         fade2: 'fadeImage2 18s infinite',
         fade3: 'fadeImage3 18s infinite',
+        fade4: 'fadeImage4 12s infinite',
+        fade5: 'fadeImage5 12s infinite'
       },
 
       keyframes: {
@@ -30,6 +32,14 @@ module.exports = {
           '0%,33%,100%':{ opacity:0 },
           '66%':{ opacity:1 }
         },
+        fadeImage4:{
+          '0%,100%':{opacity:0},
+          '50%':{opacity:1}
+        },
+        fadeImage5:{
+          '50%':{opacity:0},
+          '0%,100%':{opacity:1}
+        }
       }
       
     },
