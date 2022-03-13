@@ -11,7 +11,7 @@ function About() {
             About
         </div>
         <div className='grid place-content-center h-1/2 text-2xl reveal'>
-            <p>Hi, My name is <b>Josh</b></p>
+            <p>Hi, You could just call me <b>Josh</b></p>
             <div className='flex'>
                 <p>I'm a <b>Full Stack Developer</b></p>
                 <div className='flex ml-8'>
