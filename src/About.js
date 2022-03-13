@@ -25,7 +25,7 @@ function About() {
             <p>Based in <b>Tamil Nadu, India</b></p>
         </div>
         <div className='flex justify-center'>
-            <a href='https://drive.google.com/file/d/1BPm496p6hMDDKOzaO3uvfxw15d-82q3E/view?usp=sharing' target='_blank'>                
+            <a href='https://drive.google.com/file/d/1vs0a-XtPDvzKzFWrMJffBezib0o5Mr1B/view?usp=sharing' target='_blank'>                
                 <p className='text-lg hover:border-b-2'>Click here for my résumé</p>
             </a>
         </div>
