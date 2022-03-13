@@ -1,22 +1,22 @@
-import About from './About';
-import Extras from './Extras';
-import Header from './Header';
-import Home from './Home';
-import Projects from './Projects';
-import Skills from './Skills';
+import Header from './components/Header';
+import About from './pages/About';
+import Extras from './pages/Extras';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import Skills from './pages/Skills';
 
 function App() {
+
+  
 
   window.addEventListener('scroll',reveal)
   
   function reveal(){
     var reveals=document.querySelectorAll('.reveal')
-
     for(var i=0;i<reveals.length;i++){
       var windowheight=window.innerHeight;
       var revealtop=reveals[i].getBoundingClientRect().top;
       var revealpoint=100;
-
       if(revealtop<windowheight-revealpoint){
         reveals[i].classList.add('active');
       }

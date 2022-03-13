@@ -9,14 +9,16 @@ module.exports = {
         'marcellus': ['Marcellus','serif']
       },
       backgroundImage:{
-        'home': "url('/src/home.jpg')",
+        'home': "url('/src/images/home.jpg')",
       },
       animation: {
         fade1: 'fadeImage1 18s infinite',
         fade2: 'fadeImage2 18s infinite',
         fade3: 'fadeImage3 18s infinite',
         fade4: 'fadeImage4 12s infinite',
-        fade5: 'fadeImage5 12s infinite'
+        fade5: 'fadeImage5 12s infinite',
+
+        // text1:'fadeText1 2s'
       },
 
       keyframes: {
@@ -39,7 +41,12 @@ module.exports = {
         fadeImage5:{
           '50%':{opacity:0},
           '0%,100%':{opacity:1}
-        }
+        },
+
+        // fadeText1:{
+        //   '0%':{opacity:0},
+        //   '100%':{opacity:1}
+        // }
       }
       
     },

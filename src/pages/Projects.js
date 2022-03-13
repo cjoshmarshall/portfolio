@@ -1,9 +1,9 @@
 import React from 'react';
-import vm_img1 from './vm_img1.png'
-import vm_img2 from './vm_img2.png'
-import vm_img3 from './vm_img3.png'
-import sg_img1 from './sg_img1.jpg'
-import sg_img2 from './sg_img2.jpg'
+import vm_img1 from '../images/vintagemotors1.png'
+import vm_img2 from '../images/vintagemotors2.png'
+import vm_img3 from '../images/vintagemotors3.png'
+import sg_img1 from '../images/snakegame1.jpg'
+import sg_img2 from '../images/snakegame2.jpg'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkIcon from '@mui/icons-material/Link';
 
@@ -17,7 +17,7 @@ function Projects() {
                 <div className='mx-10 my-16  box-border border-2 reveal'>
                     <div className='flex flex-col lg:grid lg:grid-cols-2'>
                         <div className='scale-75 transition ease-out hover:scale-90'>
-                            <a href='https://www.google.com' target='_blank' rel="noreferrer">
+                            <a href='https://vintagemotorsrentals.netlify.app' target='_blank' rel="noreferrer">
                                 <div className='h-full'>
                                     <img className='absolute w-full animate-fade1' src={vm_img1} alt=' ' />
                                     <img className='absolute w-full animate-fade2' src={vm_img2} alt=' ' />

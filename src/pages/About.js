@@ -1,8 +1,8 @@
 import React from 'react';
-import icon_mongodb from './icon_mongodb.png'
-import icon_express from './icon_express.png'
-import icon_react from './icon_react.png'
-import icon_node from './icon_node.png'
+import icon_mongodb from '../images/icon_mongodb.png'
+import icon_express from '../images/icon_express.png'
+import icon_react from '../images/icon_react.png'
+import icon_node from '../images/icon_node.png'
 
 function About() {
   return (
@@ -11,7 +11,7 @@ function About() {
             About
         </div>
         <div className='grid place-content-center h-1/2 text-2xl reveal'>
-            <p>Hi, My name is <b>Josh</b></p>
+            <p>Hi, You could just call me <b>Josh</b></p>
             <div className='flex'>
                 <p>I'm a <b>Full Stack Developer</b></p>
                 <div className='flex ml-8'>
@@ -25,7 +25,7 @@ function About() {
             <p>Based in <b>Tamil Nadu, India</b></p>
         </div>
         <div className='flex justify-center'>
-            <a href='https://drive.google.com/file/d/1BPm496p6hMDDKOzaO3uvfxw15d-82q3E/view?usp=sharing' target='_blank'>                
+            <a href='https://drive.google.com/file/d/1vs0a-XtPDvzKzFWrMJffBezib0o5Mr1B/view?usp=sharing' target='_blank'>                
                 <p className='text-lg hover:border-b-2'>Click here for my résumé</p>
             </a>
         </div>

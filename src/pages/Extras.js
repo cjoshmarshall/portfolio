@@ -8,8 +8,7 @@ function Extras() {
         </div>
         <div className='grid place-content-center h-[300px] text-xl'>
             <p className='my-2'>Aside from full stack development, I am quite an enthusiast of sounds and music.</p>
-            <p className='my-2'>I have worked on a few short films on sound recording when I was at college.</p>
-            <p className='my-2'>I also play the piano. Maybe not like Beethovan or Mozart but I am a decent pianist.</p>
+            <p className='my-2'>I have worked on a few short films on sound recording when at college.</p>
         </div>
         <div className='flex justify-center my-32'>
           <p>@2022 Josh Marshall</p>
