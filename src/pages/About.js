@@ -1,8 +1,8 @@
 import React from 'react';
-import icon_mongodb from '../images/icon_mongodb.png'
-import icon_express from '../images/icon_express.png'
-import icon_react from '../images/icon_react.png'
-import icon_node from '../images/icon_node.png'
+import icon_mongodb from '../assets/icon_mongodb.png'
+import icon_express from '../assets/icon_express.png'
+import icon_react from '../assets/icon_react.png'
+import icon_node from '../assets/icon_node.png'
 
 function About() {
   return (
@@ -24,9 +24,12 @@ function About() {
             <p>with a bachelor's degree in <b>Electronics and Communications</b></p>
             <p>Based in <b>Tamil Nadu, India</b></p>
         </div>
-        <div className='flex justify-center'>
+        <div className='flex justify-evenly'>
             <a href='https://drive.google.com/file/d/1vs0a-XtPDvzKzFWrMJffBezib0o5Mr1B/view?usp=sharing' target='_blank'>                
                 <p className='text-lg hover:border-b-2'>Click here for my résumé</p>
+            </a>
+            <a href='https://github.com/cjoshmarshall' target='_blank'>                
+                <p className='text-lg hover:border-b-2'>Go to my Github profile</p>
             </a>
         </div>
     </>

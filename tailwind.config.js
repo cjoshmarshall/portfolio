@@ -9,7 +9,7 @@ module.exports = {
         'marcellus': ['Marcellus','serif']
       },
       backgroundImage:{
-        'home': "url('/src/images/home.jpg')",
+        'home': "url('/src/assets/home.jpg')",
       },
       animation: {
         fade1: 'fadeImage1 18s infinite',

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Header from './components/Header';
 import About from './pages/About';
 import Extras from './pages/Extras';
@@ -22,6 +23,8 @@ function App() {
       }
     }
   }
+
+  const [loading,setLoading]=useState(false)
 
 
   return (
