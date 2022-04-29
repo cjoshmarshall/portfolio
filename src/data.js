@@ -4,8 +4,12 @@ import vm_img3 from './assets/vintagemotors3.png'
 import tgc_img1 from './assets/theguitarcenter1.png'
 import tgc_img2 from './assets/theguitarcenter2.png'
 import tgc_img3 from './assets/theguitarcenter3.png'
-import sg_img1 from './assets/snakegame1.jpg'
-import sg_img2 from './assets/snakegame2.jpg'
+import blogera1 from './assets/blogera1.png'
+import blogera2 from './assets/blogera2.png'
+import blogera3 from './assets/blogera3.png'
+import sg_img1 from './assets/snakegame1.png'
+import sg_img2 from './assets/snakegame2.png'
+import sg_img3 from './assets/snakegame3.png'
 
 
 
@@ -34,9 +38,9 @@ export const projects=[
         githubserver:"https://github.com/cjoshmarshall/theguitarcenter_server"
     },{
         id:3,
-        image1:tgc_img1,
-        image2:vm_img2,
-        image3:tgc_img3,
+        image1:blogera1,
+        image2:blogera2,
+        image3:blogera3,
         title:"Blogera - Personal Project",
         tech:["ReactJS","NodeJS","MongoDB","AWS"],
         description:"A completely responsive blog site developed using the MERN stack and AWS.",
@@ -47,7 +51,7 @@ export const projects=[
         id:4,
         image1:sg_img1,
         image2:sg_img2,
-        image3:sg_img2,
+        image3:sg_img3,
         title:"Snake Game - Personal Project",
         tech:["ReactJS"],
         description:"A responsive game made with nothing else but ReactJS and pure Javascript. Press the UP,DOWN,LEFT,RIGHT keys to control the snake and swallow all the mice to score points.",
