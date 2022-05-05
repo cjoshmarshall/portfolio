@@ -53,9 +53,9 @@ export const projects=[
         image2:sg_img2,
         image3:sg_img3,
         title:"Snake Game - Personal Project",
-        tech:["ReactJS"],
+        tech:["ReactJS","NodeJS","MongoDB"],
         description:"A responsive game made with nothing else but ReactJS and pure Javascript. Press the UP,DOWN,LEFT,RIGHT keys to control the snake and swallow all the mice to score points.",
         link:"https://joshssnakegame.netlify.app",
-        githubclient:"https://github.com/cjoshmarshall/snakegame",
-        githubserver:"https://github.com/joshssnakegame/snakegame"
+        githubclient:"https://github.com/cjoshmarshall/snakegame_client",
+        githubserver:"https://github.com/joshssnakegame/snakegame_server"
     }]

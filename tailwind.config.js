@@ -17,8 +17,10 @@ module.exports = {
         fade3: 'fadeImage3 18s infinite',
         fade4: 'fadeImage4 12s infinite',
         fade5: 'fadeImage5 12s infinite',
+        move1: 'moveText1 12s 2s infinite',
+        move2: 'moveText2 12s 2s infinite',
+        move3: 'moveText3 12s 2s infinite'
 
-        // text1:'fadeText1 2s'
       },
 
       keyframes: {
@@ -43,10 +45,21 @@ module.exports = {
           '0%,100%':{opacity:1}
         },
 
-        // fadeText1:{
-        //   '0%':{opacity:0},
-        //   '100%':{opacity:1}
-        // }
+        moveText1:{
+          "0%":{transform:"translateX(0px)"},
+          "50%":{transform:"translateX(1200px)"},
+          "100%":{transform:"translateX(1200px)"},
+        },
+        moveText2:{
+          "0%":{transform:"translateX(-1200px)"},
+          "50%":{transform:"translateX(0px)"},
+          "100%":{transform:"translateX(1200px)"},
+        },
+        moveText3:{
+          "0%":{transform:"translateX(-2400px)"},
+          "50%":{transform:"translateX(-1200px)"},
+          "100%":{transform:"translateX(0px)"},
+        },
       }
       
     },

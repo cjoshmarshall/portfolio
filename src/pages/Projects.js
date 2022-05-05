@@ -1,6 +1,4 @@
-import React from 'react';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkIcon from '@mui/icons-material/Link';
+import LaunchIcon from '@mui/icons-material/Launch';
 
 import {projects} from "../data.js"
 
@@ -21,11 +19,11 @@ function Projects() {
                                     <img className='absolute w-full animate-fade2' src={project.image2} alt=' ' />
                                     <img className='w-full animate-fade3' src={project.image3} alt=' ' />
                                 </div>
-                                <div className='absolute top-0 left-0 w-full h-full  bg-black opacity-0 hover:opacity-100 hover:bg-opacity-50 transition'>
+                                <div className='absolute top-0 left-0 w-full h-full  bg-black opacity-0 hover:opacity-100 hover:bg-opacity-60 transition'>
                                     <div className='grid place-content-center h-full text-4xl text-white bg-opacity-100'>
                                         <div className='flex'>
                                             <p>go to site</p>
-                                            <div><LinkIcon className='scale-150 mx-4'/></div>
+                                            <div><LaunchIcon className='scale-150 mx-4'/></div>
                                         </div>
                                     </div>
                                 </div>
@@ -33,27 +31,30 @@ function Projects() {
                         </div>
                         <div className='p-8 lg:px-0 lg:w-11/12'>
                             <p className='text-2xl'>{project.title}</p>
-                            <ul className='flex justify-center my-3 text-xl'>
+                            <ul className='flex justify-center my-3 md:text-xl'>
                             {project.tech.map(items=>(
-                                <li className='mx-6'>{items}</li>
+                                <li className='mx-6' key={items}>{items}</li>
                                 ))}
                             </ul>
                             <div className='2xl:my-12 2xl:text-xl'>
                                 <p className='my-2'>Description:</p>
                                 <p>{project.description}</p>
-                            </div>
-                            
-                        <div className='flex justify-end mx-4 mt-6'>
-                            <a href={project.link} target='_blank'>
-                                <LinkIcon className='hover:transition ease-out hover:scale-150 mx-2'/>
-                            </a>
-                            <a href={project.githubclient} target='_blank'>
-                                <GitHubIcon className='hover:transition ease-out hover:scale-150 mx-2'/>
-                            </a>
-                            <a href={project.githubserver} target='_blank'>
-                                <GitHubIcon className='hover:transition ease-out hover:scale-150 mx-2'/>
-                            </a>                        
-                        </div>
+                            </div>                            
+                        
+                            <ul className='flex justify-between mt-6 text-l sm:justify-evenly'>
+                                <li className='flex mx-2 cursor-pointer hover:underline'>
+                                    <a href={project.githubclient} target='_blank'>
+                                        Go to Git-Client
+                                    </a>
+                                    <span className='hidden sm:block'><LaunchIcon className='mx-2'/></span>
+                                </li>
+                                <li className='flex mx-2 cursor-pointer hover:underline'>
+                                    <a href={project.githubserver} target='_blank'>
+                                        Go to Git-Server
+                                    </a>
+                                    <span className='hidden sm:block'><LaunchIcon className='mx-2'/></span>
+                                </li>
+                            </ul>
                         </div>
                     </div>                    
                 </div>
