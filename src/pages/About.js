@@ -25,12 +25,12 @@ function About() {
         </div>
         <ul className='flex justify-evenly'>                
             <li className='lg:text-lg hover:border-b-2'>
-                <a href='https://drive.google.com/file/d/1GKAFIFHIdcJGFLEh0sQPjMzcWF4fFLxk/view' target='_blank'>
+                <a href='https://drive.google.com/file/d/1GKAFIFHIdcJGFLEh0sQPjMzcWF4fFLxk/view' target='_blank' rel='noopener noreferrer'>
                     Click here for my résumé
                 </a>
             </li>                
             <li className='lg:text-lg hover:border-b-2'>
-                <a href='https://github.com/cjoshmarshall' target='_blank'>
+                <a href='https://github.com/cjoshmarshall' target='_blank' rel='noopener noreferrer'>
                     Go to my Github profile
                 </a>
             </li>            
