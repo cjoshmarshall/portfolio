@@ -16,30 +16,31 @@ function Home() {
           <div className='my-5 flex lg:mx-0 flex-start'>
             <ArticleIcon className='mr-7 scale-100 cursor-pointer sm:ml-12' fontSize='large' />
             <p className='self-center cursor-pointer hover:underline'>
-              <a href="https://drive.google.com/file/d/1vs0a-XtPDvzKzFWrMJffBezib0o5Mr1B/view" target='_blank'>Click here for my résumé</a>
+              <a href="https://drive.google.com/file/d/1GKAFIFHIdcJGFLEh0sQPjMzcWF4fFLxk/view" target='_blank' rel='noopener noreferrer'>Click here for my résumé</a>
             </p>
           </div>
           <div className='my-5 flex lg:mx-0'>
             <GitHubIcon className='mr-7 scale-100 sm:ml-12' fontSize='large' />
             <p className='self-center cursor-pointer hover:underline'>
-              <a href="https://www.github.com" target='_blank'>My Github Profile</a>
+              <a href="https://www.github.com" target='_blank' rel='noopener noreferrer'>My Github Profile</a>
             </p>
           </div>
           <div className='my-5 flex lg:mx-0'>
             <EmailIcon className='mr-7 scale-100 sm:ml-12' fontSize='large' />
             <p className='self-center'>Email : <span className='cursor-pointer hover:underline'>
-              <a href="mailto:cjoshmarshall@gmail.com">cjoshmarshall@gmail.com</a></span>
+              <a href="mailto:cjoshmarshall@gmail.com" rel='noopener noreferrer'>cjoshmarshall@gmail.com</a></span>
             </p>
           </div>
           <div className='my-5 flex lg:mx-0'>
             <PhoneIcon className='mr-7 scale-100 sm:ml-12' fontSize='large' />
-            <p className='self-center'>Phone : <span>+919486684097</span>
+            <p className='self-center'>Phone : <span className='cursor-pointer hover:underline'>
+            <a href="tel:+919486684097" rel='noopener noreferrer'>+919486684097</a></span>
             </p>
           </div>
           <div className='my-5 flex lg:mx-0'>
             <WhatsAppIcon className='mr-7 scale-100 sm:ml-12' fontSize='large' />
             <p className='self-center'>Whatsapp : <span className='cursor-pointer hover:underline'>
-            <a href="https://wa.me/+919486684097" target='_blank'>+919486684097</a></span>
+            <a href="https://wa.me/+919486684097" target='_blank' rel='noopener noreferrer'>+919486684097</a></span>
             </p>
           </div>
         </div>

@@ -25,7 +25,7 @@ function About() {
         </div>
         <ul className='flex justify-evenly'>                
             <li className='lg:text-lg hover:border-b-2'>
-                <a href='https://drive.google.com/file/d/1vs0a-XtPDvzKzFWrMJffBezib0o5Mr1B/view' target='_blank'>
+                <a href='https://drive.google.com/file/d/1GKAFIFHIdcJGFLEh0sQPjMzcWF4fFLxk/view' target='_blank'>
                     Click here for my résumé
                 </a>
             </li>                
