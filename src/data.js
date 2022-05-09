@@ -16,6 +16,17 @@ import sg_img3 from './assets/snakegame3.png'
 export const projects=[
     {
         id:1,
+        image1:vm_img1,
+        image2:vm_img2,
+        image3:vm_img3,
+        title:"Vintage Motors Rentals - Personal Project",
+        tech:["ReactJS","NodeJS","MongoDB","AWS"],
+        description:"A completely responsive e-commerce site for renting Bikes implemented using the MERN stack.",
+        link:"https://vintagemotorsrentals.netlify.app",
+        githubclient:"https://github.com/cjoshmarshall/vintagemotors_client",
+        githubserver:"https://github.com/cjoshmarshall/vintagemotors_server"
+    },{
+        id:2,
         image1:tgc_img1,
         image2:tgc_img2,
         image3:tgc_img3,
@@ -25,17 +36,6 @@ export const projects=[
         link:"https://theguitarcenter.netlify.app",
         githubclient:"https://github.com/cjoshmarshall/theguitarcenter_client",
         githubserver:"https://github.com/cjoshmarshall/theguitarcenter_server"
-    },{
-        id:2,
-        image1:vm_img1,
-        image2:vm_img2,
-        image3:vm_img3,
-        title:"Vintage Motors Rentals - Personal Project",
-        tech:["ReactJS","NodeJS","MongoDB","AWS"],
-        description:"A completely responsive e-commerce site for renting Bikes implemented using the MERN stack.",
-        link:"https:/vintagemotorsrentals.netlify.app",
-        githubclient:"https://github.com/cjoshmarshall/vintagemotors_client",
-        githubserver:"https://github.com/cjoshmarshall/vintagemotors_server"
     },{
         id:3,
         image1:blogera1,
