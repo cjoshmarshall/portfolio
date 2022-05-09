@@ -22,7 +22,7 @@ export const projects=[
         title:"Vintage Motors Rentals - Personal Project",
         tech:["ReactJS","NodeJS","MongoDB","AWS"],
         description:"A completely responsive e-commerce site for renting Bikes implemented using the MERN stack.",
-        link:"https:/vintagemotorsrentals.netlify.appp",
+        link:"https:/vintagemotorsrentals.netlify.app",
         githubclient:"https://github.com/cjoshmarshall/vintagemotors_client",
         githubserver:"https://github.com/cjoshmarshall/vintagemotors_server"
     },{

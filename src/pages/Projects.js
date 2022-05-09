@@ -13,7 +13,7 @@ function Projects() {
                     <div className='mx-10 my-16  box-border border-2 reveal' key={project.id}>
                     <div className='flex flex-col lg:grid lg:grid-cols-2'>
                         <div className='scale-75 transition ease-out hover:scale-90'>
-                            <a href={project.link} target='_blank' rel="noreferrer">
+                            <a href={project.link} target='_blank' rel="noopener noreferrer">
                                 <div className='h-full'>
                                     <img className='absolute w-full animate-fade1' src={project.image1} alt=' ' />
                                     <img className='absolute w-full animate-fade2' src={project.image2} alt=' ' />
