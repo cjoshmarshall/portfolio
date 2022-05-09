@@ -17,9 +17,9 @@ module.exports = {
         fade3: 'fadeImage3 18s infinite',
         fade4: 'fadeImage4 12s infinite',
         fade5: 'fadeImage5 12s infinite',
-        move1: 'moveText1 12s 2s infinite',
-        move2: 'moveText2 12s 2s infinite',
-        move3: 'moveText3 12s 2s infinite'
+        move1: 'moveText1 12s 1s infinite',
+        move2: 'moveText2 12s 1s infinite',
+        move3: 'moveText3 12s 1s infinite'
 
       },
 
