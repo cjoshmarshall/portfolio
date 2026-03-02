@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply m-0 text-navy bg-cream font-maven font-bold antialiased;
+  }
+  h1 {
+    @apply font-shrikhand text-4xl font-light;
+  }
+  a {
+    @apply text-inherit no-underline;
+  }
+  button {
+    @apply font-sulphur font-extrabold text-lg border-[1.5px] border-solid rounded-[50px] text-navy bg-cream2 cursor-pointer;
+  }
+}
+
+
+/* Scrollbar - not in Tailwind */
+::-webkit-scrollbar {
+  width: 18px;
+}
+::-webkit-scrollbar-track {
+  background: white;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(171, 95, 95);
+}
+
+/* Flip card classes toggled by JS */
+@layer components {
+  .projects_flip {
+    @apply border-[5px] border-double border-black bg-wheat;
+    transform: rotateY(180deg);
+  }
+  .projects_flipShadow:hover {
+    box-shadow: -15px 15px 15px 2px rgb(0 0 0 / 0.9);
+  }
+}

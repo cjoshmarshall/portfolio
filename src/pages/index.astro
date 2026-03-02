@@ -1,0 +1,20 @@
+---
+import HomeLayout from "../layouts/HomeLayout.astro";
+import Header from "../components/Header";
+import Sidebar from "../components/Sidebar";
+import HomeSection from "../sections/Home";
+import AboutSection from "../sections/About";
+import ProjectsSection from "../sections/Projects";
+import SkillsSection from "../sections/Skills";
+import ContactSection from "../sections/Contact";
+---
+
+<HomeLayout>
+  <Header client:load />
+  <Sidebar client:load />
+  <HomeSection />
+  <AboutSection />
+  <ProjectsSection client:load />
+  <SkillsSection />
+  <ContactSection />
+</HomeLayout>
