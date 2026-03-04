@@ -17,7 +17,7 @@ export default {
         cream2: 'rgb(255, 200, 100)',
         brown: '#b78246',
         gray70: 'rgb(70, 70, 70)',
-        blanchedAlmond: 'blanchedAlmond',
+        blanchedalmond: 'blanchedalmond',
         wheat: 'wheat',
       },
       keyframes: {

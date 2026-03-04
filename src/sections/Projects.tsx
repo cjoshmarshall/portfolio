@@ -116,7 +116,7 @@ export const projects = [
 export default function ProjectsSection() {
   return (
     <section id="projects">
-      <div className="min-h-fit bg-[blanchedAlmond]">
+      <div className="min-h-fit bg-blanchedalmond">
         <div className="mx-auto px-[100px] pt-[70px] max-[1275px]:px-8 max-[1275px]:pt-[70px]">
           <h1 className="m-0">Projects</h1>
         </div>
