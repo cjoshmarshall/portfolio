@@ -20,7 +20,6 @@
   }
 }
 
-
 /* Scrollbar - not in Tailwind */
 ::-webkit-scrollbar {
   width: 18px;
@@ -41,4 +40,60 @@
   .projects_flipShadow:hover {
     box-shadow: -15px 15px 15px 2px rgb(0 0 0 / 0.9);
   }
+}
+
+/* Home hero letter bounce – pure CSS, smooth */
+@keyframes home-bounce {
+  0% {
+    transform: translateY(0) rotateY(0deg);
+  }
+  25% {
+    transform: translateY(-18px) rotateY(-90deg);
+  }
+  50% {
+    transform: translateY(-28px) rotateY(-180deg);
+  }
+  75% {
+    transform: translateY(-10px) rotateY(-270deg);
+  }
+  100% {
+    color: rgb(171, 95, 95);
+    transform: translateY(0) rotateY(-360deg);
+  }
+}
+
+@keyframes home-bounce-after {
+  0% {
+    transform: translateY(0) rotateY(0deg);
+  }
+  25% {
+    transform: translateY(-18px) rotateY(-90deg);
+  }
+  50% {
+    transform: translateY(-28px) rotateY(-180deg);
+  }
+  75% {
+    transform: translateY(-10px) rotateY(-270deg);
+  }
+  100% {
+    transform: translateY(0) rotateY(-360deg);
+  }
+}
+
+.home-bounce {
+  display: inline-block;
+  position: relative;
+  animation-name: home-bounce;
+  animation-duration: 0.38s;
+  animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+  animation-fill-mode: forwards;
+}
+
+.home-bounce-after {
+  display: inline-block;
+  position: relative;
+  animation-name: home-bounce-after;
+  animation-duration: 0.38s;
+  animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+  animation-fill-mode: forwards;
 }
