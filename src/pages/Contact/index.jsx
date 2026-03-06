@@ -10,7 +10,7 @@ function Contact() {
         <div className="contact_subcontainer">
           <div className="contact_innercontainer">
             <a
-              href="https://drive.google.com/file/d/1Qe3v_zIuWGDV_KbWiICOugv9nSqZ8Tuw/view"
+              href="https://drive.google.com/file/d/151nA2h1LD2LUWHNWlraUX7nn_UzX2-Mp/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -19,7 +19,7 @@ function Contact() {
             <p className="contact_innertitle">Résumé</p>
             <p className="contact_innerdescription">
               <a
-                href="https://drive.google.com/file/d/1Qe3v_zIuWGDV_KbWiICOugv9nSqZ8Tuw/view"
+                href="https://drive.google.com/file/d/151nA2h1LD2LUWHNWlraUX7nn_UzX2-Mp/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >

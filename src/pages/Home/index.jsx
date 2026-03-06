@@ -80,7 +80,7 @@ function Home() {
         </h1>
         <div className="home_buttonContainer">
           <a
-            href="https://drive.google.com/file/d/1oflin82NlfYGqXL2S09ihS5uOz2BMlZW/view"
+            href="https://drive.google.com/file/d/151nA2h1LD2LUWHNWlraUX7nn_UzX2-Mp/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
