@@ -1,98 +1,37 @@
-import { Project as ProjectType } from "../types/index.js";
-
-const CYCLE_DURATION_S = 16;
-
-function buildCycleKeyframes(n: number): string {
-  if (n <= 0) return "";
-  if (n === 1) return "0%,100%{opacity:1}";
-  const step = 100 / n;
-  const steps: string[] = ["0%{opacity:1}"];
-  for (let i = 1; i < n; i++) {
-    const off = (step * i).toFixed(3);
-    const on = (step * i + 0.001).toFixed(3);
-    steps.push(`${off}%{opacity:0}`, `${on}%{opacity:1}`);
-  }
-  steps.push(`${(step * n).toFixed(3)}%{opacity:0}`);
-  return steps.join("");
-}
-
-function CyclingImages({ images }: { images: string[] }) {
-  const N = images.length;
-  if (N === 0) return null;
-
-  const keyframeName = `cycling-fade-${N}`;
-  const keyframes = buildCycleKeyframes(N);
-  const durationPerImage = CYCLE_DURATION_S / N;
-
-  return (
-    <div className="flex justify-center m-5 relative h-[170px]">
-      {keyframes ? (
-        <style>{`@keyframes ${keyframeName}{${keyframes}}`}</style>
-      ) : null}
-      {images.map((src, i) => (
-        <img
-          key={`${src}-${i}`}
-          className="mx-auto h-[170px] absolute left-1/2 -translate-x-1/2"
-          src={src}
-          alt=""
-          style={{
-            animation: keyframes
-              ? `${keyframeName} ${CYCLE_DURATION_S}s linear infinite`
-              : "none",
-            animationDelay: N > 1 ? `${-i * durationPerImage}s` : undefined,
-          }}
-        />
-      ))}
-    </div>
-  );
-}
+import type { Project as ProjectType } from "../types";
+import { useState } from "react";
+import { cn } from "../utils/cn";
+import Button from "./Button";
 
 export default function Project({ project }: { project: ProjectType }) {
-  const handleFlip = (id: string) => {
-    const el = document.getElementById(id);
-    if (el) {
-      el.classList.add("projects_flip", "projects_flipShadow");
-      el.classList.remove("projects_frontContainer");
-    }
-  };
-
-  const handleFlipBack = (id: string) => {
-    const el = document.getElementById(id);
-    if (el) el.classList.remove("projects_flip", "projects_flipShadow");
-  };
+  const [isFlipped, setIsFlipped] = useState(false);
 
   return (
     <div className="flex justify-center m-5 transition-[transform] duration-200 hover:-translate-x-2.5 hover:-translate-y-2.5 max-[980px]:m-2.5 max-[890px]:mx-auto max-[890px]:my-0 max-[660px]:mx-5">
       <div
-        className="inline-flex justify-center relative w-full border-[5px] border-double border-black rounded-sm [transform-style:preserve-3d] transition-all duration-200 hover:text-black hover:bg-wheat hover:border-black hover:shadow-[15px_15px_15px_2px_rgba(0,0,0,0.9)]"
-        id={`flip${project.id}`}
+        className={cn(
+          "inline-flex justify-center relative w-full border-[5px] border-double border-black rounded-sm [transform-style:preserve-3d] transition-all duration-200 hover:text-black hover:bg-wheat hover:border-black hover:shadow-[15px_15px_15px_2px_rgba(0,0,0,0.9)]",
+          isFlipped &&
+            "[transform:rotateY(180deg)] bg-wheat hover:shadow-[-15px_15px_15px_2px_rgb(0_0_0_/_0.9)]",
+        )}
       >
-        <div className="min-h-fit [backface-visibility:hidden] projects_frontContainer">
+        <div className="min-h-fit [backface-visibility:hidden]">
           <CyclingImages images={project.images} />
           <div className="flex justify-center m-5">
             <h2 className="w-auto"> {project.title}</h2>
           </div>
-          <ul className="flex justify-center p-0 list-none">
+          <ul className="flex justify-center my-6 list-none">
             {project.site.map((item) => (
               <li className="mx-3" key={item.id}>
                 <a href={item.link} target="_blank" rel="noreferrer">
-                  <button
-                    className="my-2.5 mx-0 py-2.5 px-2.5 text-base shadow-[3px_6px] transition-all duration-100 hover:translate-x-1.5 hover:translate-y-1.5 hover:shadow-none"
-                    type="button"
-                  >
-                    {item.button}
-                  </button>
+                  <Button type="button">{item.button}</Button>
                 </a>
               </li>
             ))}
             <li className="mx-3">
-              <button
-                className="my-2.5 mx-0 py-2.5 px-2.5 text-base shadow-[3px_6px] transition-all duration-100 hover:translate-x-1.5 hover:translate-y-1.5 hover:shadow-none"
-                type="button"
-                onClick={() => handleFlip("flip" + project.id)}
-              >
+              <Button type="button" onClick={() => setIsFlipped(true)}>
                 READ MORE
-              </button>
+              </Button>
             </li>
           </ul>
         </div>
@@ -107,29 +46,47 @@ export default function Project({ project }: { project: ProjectType }) {
           <div className="flex justify-center m-5">
             <p className="w-auto">{project.description}</p>
           </div>
-          <ul className="flex justify-center list-none p-0">
+          <ul className="flex justify-center list-none p-0 gap-4">
             {project.tech.map((tech) => (
               <li
-                className="mx-5 py-1.5 border-2 border-brown rounded-md"
+                className="px-2.5 py-1.5 border-2 border-brown rounded-md"
                 key={tech}
               >
                 <i>{tech}</i>
               </li>
             ))}
           </ul>
-          <ul className="flex justify-center p-0 list-none">
-            <li className="mx-3">
-              <button
-                className="my-2.5 mx-0 py-2.5 px-2.5 text-base shadow-[3px_6px] transition-all duration-100 hover:translate-x-1.5 hover:translate-y-1.5 hover:shadow-none"
-                type="button"
-                onClick={() => handleFlipBack("flip" + project.id)}
-              >
-                READ LESS
-              </button>
-            </li>
-          </ul>
+          <Button
+            type="button"
+            onClick={() => setIsFlipped(false)}
+            className="my-6"
+          >
+            READ LESS
+          </Button>
         </div>
       </div>
+    </div>
+  );
+}
+
+function CyclingImages({ images }: { images: string[] }) {
+  const shown = images.slice(0, 3);
+
+  if (shown.length === 0) return null;
+
+  return (
+    <div className="flex justify-center m-5 relative h-[170px]">
+      {shown.map((src, i) => (
+        <img
+          key={`${src}-${i}`}
+          className={cn(
+            "mx-auto h-[170px] absolute left-1/2 -translate-x-1/2",
+            `animate-image${[i + 1]}`,
+          )}
+          src={src}
+          alt=""
+        />
+      ))}
     </div>
   );
 }

@@ -1,9 +1,11 @@
+import Button from "../components/Button";
+
 export default function HomeSection() {
   return (
     <section id="home">
-      <div className="min-h-[90vh] bg-[linear-gradient(340deg,rgba(250,137,123,1)_0%,rgba(255,221,148,1)_46%)] max-[1180px]:min-h-0">
+      <div className="h-screen flex items-center bg-[linear-gradient(340deg,rgba(250,137,123,1)_0%,rgba(255,221,148,1)_46%)] max-[1180px]:min-h-0">
         <div
-          className="block text-center mx-auto my-0 py-[100px] px-[250px] max-[1180px]:px-[200px] max-[1060px]:px-[100px] max-[532px]:px-12 max-[532px]:py-12"
+          className="text-center mx-auto my-0 py-[100px] px-[250px] max-[1180px]:px-[200px] max-[1060px]:px-[100px] max-[532px]:px-12 max-[532px]:py-12"
           id="home-inner"
         >
           <h1 className="flex justify-center flex-wrap mx-auto text-[60px] leading-[70px] max-[1180px]:text-5xl max-[532px]:text-3xl max-[532px]:leading-[70px] [perspective:800px] [transform-style:preserve-3d]">
@@ -177,30 +179,30 @@ export default function HomeSection() {
               </span>
             </div>
           </h1>
-          <div className="my-10 mx-auto">
+          <div className="flex gap-10 max-[532px]:gap-2 justify-center my-14 mx-auto">
             <a
               href="https://drive.google.com/file/d/1oflin82NlfYGqXL2S09ihS5uOz2BMlZW/view"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button
-                className="my-2.5 mx-5 py-2.5 px-5 shadow-[5px_10px] transition-all duration-100 hover:translate-x-2.5 hover:translate-y-2.5 hover:shadow-none max-[532px]:mx-2.5 max-[532px]:py-1.5 max-[532px]:px-2.5"
+              <Button
+                className="py-2.5 px-5 shadow-[5px_10px] max-[532px]:mx-2.5 max-[532px]:py-1.5 max-[532px]:px-2.5"
                 type="button"
               >
                 CHECK OUT MY RÉSUMÉ
-              </button>
+              </Button>
             </a>
             <a
               href="https://www.github.com/cjoshmarshall"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button
-                className="my-2.5 mx-5 py-2.5 px-5 shadow-[5px_10px] transition-all duration-100 hover:translate-x-2.5 hover:translate-y-2.5 hover:shadow-none max-[532px]:mx-2.5 max-[532px]:py-1.5 max-[532px]:px-2.5"
+              <Button
+                className="py-2.5 px-5 shadow-[5px_10px] max-[532px]:mx-2.5 max-[532px]:py-1.5 max-[532px]:px-2.5"
                 type="button"
               >
                 GO TO MY GITHUB PROFILE
-              </button>
+              </Button>
             </a>
           </div>
         </div>

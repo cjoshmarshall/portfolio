@@ -12,6 +12,9 @@
   h1 {
     @apply font-shrikhand text-4xl font-light;
   }
+  h2 {
+    @apply text-xl;
+  }
   a {
     @apply text-inherit no-underline;
   }
@@ -29,17 +32,6 @@
 }
 ::-webkit-scrollbar-thumb {
   background: rgb(171, 95, 95);
-}
-
-/* Flip card classes toggled by JS */
-@layer components {
-  .projects_flip {
-    @apply border-[5px] border-double border-black bg-wheat;
-    transform: rotateY(180deg);
-  }
-  .projects_flipShadow:hover {
-    box-shadow: -15px 15px 15px 2px rgb(0 0 0 / 0.9);
-  }
 }
 
 /* Home hero letter bounce – pure CSS, smooth */
